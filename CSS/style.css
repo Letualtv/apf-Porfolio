@@ -1,0 +1,129 @@
+/*  CSS  HTML */
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    place-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* CSS BASE SECCION */
+
+.section1 {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 0;
+}
+
+
+/*Texto Centro*/
+.centro1{
+    padding-top: 12em;
+    padding-bottom: 5em;
+}
+.centro1 h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+.typed-out {
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: block;
+	width: 25ch;
+	overflow: hidden;
+	border-right: 0.10em solid #ff8400;
+	white-space: nowrap;
+	animation: typing 3s steps(25), blink 0.5s step-end infinite alternate;
+  }
+  @keyframes typing {
+	from { width: 0 }
+ }
+  @keyframes blink {
+	50% {
+	  border-color: transparent;
+	}}
+.centro1 h1 {
+    color: transparent;
+    background-image: linear-gradient(to left, #ff8400, #7B68EE, #3498db, #2ecc71, #d62d0e, #ff8400, #7B68EE);    
+    background-clip: text;
+    animation: color 10s linear infinite;
+    background-size: 500%;   
+    text-shadow: none; 
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+/* botones contacto y descargar CV*/
+
+  .btns1{
+    position: absolute;
+    top: 28em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  z-index: 5px;
+  }
+    .btns1 button {
+      border: 2px solid white;
+      background-color: transparent;
+      padding: 0.5em;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border-radius: 7px;
+      text-align: center;
+      min-width: 8em;
+      margin: 0.7em;
+    }
+    .btns1 button:hover {
+      background-color: white;
+      color: black;
+      -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+      animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    }
+    @keyframes shadow-pop-br {
+      0% {
+        box-shadow: 0 0 #ffffff33;
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        box-shadow: 1px 1px #3e3e3e, 2px 2px #3e3e3e, 3px 3px #3e3e3e, 4px 4px #3e3e3e, 5px 5px #3e3e3e, 6px 6px #3e3e3e, 7px 7px #3e3e3e, 8px 8px #3e3e3e;
+        transform: translateX(-8px) translateY(-8px);
+      }
+    }
+    
+    @keyframes color {
+      from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }}
+  
+  /* BOTONES ARRIBA DERECHA SWITCH Y CAMBIO DE IDIOMA*/
+    .btns2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+       height: 2em;
+    }
+    .btns2 button {
+      border: 1px solid white;
+      background-color: transparent;
+      padding: 0.5em;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border-radius: 5px;
+      text-align: center;
+      min-width: 6em;
+      margin: 1em;
+
+    }
+    .btns2 button:hover {
+      background-color: white;
+      color: black;
+    }
